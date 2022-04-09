@@ -1,0 +1,98 @@
+:root {
+  --tdSize: 60px;
+}
+body {
+  user-select: none;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+
+/* setting */
+#setting {
+  width: 150px;
+  margin: 20px auto 10px;
+  display: flex;
+}
+input {
+  width: 30px;
+  height: 20px;
+  padding: 0;
+  text-align: center;
+}
+#btn {
+  width: 100px;
+  margin: 0 auto;
+  padding: 2px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border: solid 1px black;
+  background: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* game */
+table {
+  border-collapse: collapse;
+  background: #e6e6e6;
+  margin: 0 auto;
+}
+td {
+  width: var(--tdSize);
+  height: var(--tdSize);
+  border: solid 3px white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+th {
+  width: 30px;
+  height: 30px;
+  border: solid 3px white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background: white;
+}
+#numbers {
+  margin-top: 20px;
+  width: 470px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#numbers .number,
+.remove {
+  cursor: grab;
+  user-select: none;
+  width: 50px;
+  height: 50px;
+  background: darkblue;
+  color: white;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  margin: 1px;
+}
+#numbers .number:active,
+.remove:active {
+  cursor: grabbing;
+}
+.select {
+  opacity: 0.2;
+  pointer-events: none;
+}
+.select2 {
+  background: pink;
+}
+.total {
+  width: 30px;
+  background: #e6e6e6;
+  color: #696969;
+  border-radius: 5px;
+  font-weight: bolder;
+  margin: 0 auto;
+}
